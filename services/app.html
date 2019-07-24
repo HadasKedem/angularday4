@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <title>Hello Angular!</title>
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="services.js"></script>
+    <script src="controllers.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body >
+   
+<div ng-controller="inputCtrl">
+  
+<table style="align-self: center">
+        <tr>
+          <td>a : </td>
+          <td>
+                <input type="number" name="a" ng-model="ab.a" required> 
+          </td>
+          <td>{{ab.a}}</td>
+        </tr>
+        <tr>
+          <td>b : </td>
+          <td>
+                <input type="number" name="b" ng-model="ab.b" required> 
+          </td>
+          <td>{{ab.b}}</td>
+        </tr>
+      </table>
+      <form>
+      <label>
+          <input  type="radio" name="color" ng-click="saveClass(value)"  value="green-yellow" /> green-yellow
+          <input  type="radio" name="color" ng-click="saveClass(value)"  value="blue-brown" /> blue-brown
+          </label>
+    </form>
+</div>
+
+    <div ng-controller="sumCtrl as sum" >
+      {{ab.a}} + {{ab.b}} = <p ng-class="getClass(ab.a + ab.b)">{{ab.a + ab.b}}</p>
+    </div>
+    <!-- <div ng-controller="ACtrl as a">
+      <p ng-repeat="i in A_arr">{{i}}</p>
+    </div> -->
+</body>
+
+</html>

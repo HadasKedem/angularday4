@@ -1,0 +1,22 @@
+
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+
+  }
+  .classBLUE {
+    color: BLUE;
+  }
+  .classYELLOW {
+    color:yellow;
+  }
+  .classBROWN {
+    color:brown;
+  }
+  .classGREEN {
+
+    color: rgb(167, 255, 167);
+  
+  }
+
+  
